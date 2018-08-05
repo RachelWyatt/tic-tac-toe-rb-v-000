@@ -116,13 +116,10 @@ def turn(board)
 end
 
 def play(board)
-  counter = 0
-  while counter < 9
+  until over?(board) || draw?(board) ||
     turn(board)
     counter += 1
-  end#  until over?(board) ||
-#    turn(board)
-#  end
+  end
 
   if won?(board)
     puts "Congratulations, #{won?(board)[0]}!"
