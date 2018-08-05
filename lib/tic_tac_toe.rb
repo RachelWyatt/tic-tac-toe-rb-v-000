@@ -118,7 +118,6 @@ end
 def play(board)
   until over?(board) || draw?(board) ||
     turn(board)
-    counter += 1
   end
 
   if won?(board)
