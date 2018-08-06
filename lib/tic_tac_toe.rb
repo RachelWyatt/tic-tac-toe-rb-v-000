@@ -120,7 +120,7 @@ def play(board)
     turn(board)
   end
 
-  if board[won?(board)[0]] == "O"
+  if won?(board)
     puts "Congratulations O!"
     #puts "Congratulations #{board[won?(board)[0]]}!"
   else draw?(board)
